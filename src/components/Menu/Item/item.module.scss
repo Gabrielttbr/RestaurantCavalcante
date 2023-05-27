@@ -1,0 +1,114 @@
+@import 'styles/_variables.scss';
+@import 'styles/_breakpoints.scss';
+
+
+.box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: $sizes_computer;
+    height: 30vh;
+    width: 100%;
+    margin: 20px; 
+    .img_item{
+        justify-items: flex-start;
+        width: 25%;
+        height: 100%;
+        img{
+             width: 100%;
+             border-radius: 10%;
+        }
+        
+    }
+    .box_child{
+        height: 100%;
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .title{
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 31px;
+            height: 20% !important;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: $margin_left_of_item;
+            align-items: center;
+        }
+        .description{
+            margin-left: $margin_left_of_item;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            height: 20%;
+            width: 80%;
+        }
+        .information{
+            margin-left: $margin_left_of_item;
+            height: 20%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+                        
+            .price{
+                font-size: 20px;
+                color: $color_price;
+                font-size: 'Roboto', sans-serif;
+                font-style: italic;
+                font-weight: 800;
+                padding: $padding_itens_of_information;
+            }
+            .size{
+                font-size: 18px;
+                color: $quatary_color;
+                font-size: 'Roboto', sans-serif;
+                font-weight:700;
+                padding: $padding_itens_of_information;
+            }
+            .serving{
+                font-size: 18px;
+                color: $quatary_color;
+                font-size: 'Roboto', sans-serif;
+                font-weight:500;
+                padding: $padding_itens_of_information;
+            }
+            .category_mass{
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                background-color: $category_color_mass;
+                padding: $padding_itens_of_information;
+            }
+            .category_meat{
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                background-color: $category_color_meat;
+                padding: $padding_itens_of_information;
+            }
+            .category_combos{
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                background-color: $category_color_combos;
+                padding: $padding_itens_of_information;
+            }
+            .category_vegan{
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                background-color: $category_color_vegan;
+                padding: $padding_itens_of_information;
+            }
+        }
+    }
+}

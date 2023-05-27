@@ -1,0 +1,29 @@
+@import 'styles/_variables.scss';
+@import 'styles/_breakpoints.scss';
+
+.box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.inputSearch{
+    width: 20vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    background-color: $tertiary_color;
+    color: quatary_color;
+
+    &:focus{
+        outline: none;
+        border: 1px solid $secondary_color;
+    }
+}
+.searchIcon{
+    position: relative;
+    left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

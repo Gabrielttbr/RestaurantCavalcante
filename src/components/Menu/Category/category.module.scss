@@ -1,0 +1,23 @@
+@import 'styles/_variables.scss';
+@import 'styles/_breakpoints.scss';
+
+.category{
+    margin: 5px;
+}
+.button_category{
+    background-color: $primary_color;
+    color: $quatary_color;
+    border: solid 1px $tertiary_color;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        background-color: $secondary_color;
+    }
+    &:focus{
+        background-color: $secondary_color;
+        border: solid 1px $quatary_color;
+    }
+}

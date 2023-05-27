@@ -1,0 +1,44 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
+.container{
+    margin-top: 50px;
+    margin-right: $margin_right_of_container_father_computer !important;
+    margin-left:  $margin_left_of_container_father_computer !important;;
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 31px;
+}
+.categories{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+.taskbar{
+    margin: auto;
+    max-width: $sizes_computer;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+}
+.order{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container_child{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.container_parents {
+    max-width: $sizes_computer;
+    margin: auto;
+}
